@@ -7,8 +7,10 @@ from PIL import Image
 import time
 import tensorflow as tf
 from tensorflow import keras
+import os
 
-bird_names = pd.read_csv('./BirdLabels.csv')
+
+bird_names = pd.read_csv(os.getcwd()+'BirdLabels.csv')
 
 def generate_prediction(img):
     img = img.resize((224,224))
