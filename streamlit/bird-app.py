@@ -1,5 +1,3 @@
-pip install streamlit-cropper
-
 #imports
 import streamlit as st
 import pandas as pd
