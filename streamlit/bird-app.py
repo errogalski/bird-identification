@@ -32,7 +32,7 @@ st.write("1) Upload an image of a bird")
 st.write("2) Place a box around the bird you wish to identify")
 
 
-model = keras.models.load_model('./models/EFSave5.h5')
+model = keras.models.load_model('../final-model/EFSave5.h5')
 
 img_file = st.sidebar.file_uploader(label='Upload an image here', type=['jpg', 'jpeg'])
 realtime_update = st.sidebar.checkbox(label="Update in Real Time", value=True)
